@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    display: block;
+    background-color: aqua;
+    text-align: center;
+    overflow: hidden;
+    height: 45px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    position: relative;
+
+}
+h1 span{
+    display: block;
+    transition: all ease .4s;
+}
+h1:hover .a{
+    margin-top: -40px;
+}
+

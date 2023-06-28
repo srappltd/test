@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 70%;
+    height: 70%;
+    background-color: cadetblue;
+    overflow: hidden;
+    position: relative;
+    /* z-index: 0; */
+
+}
+.card{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: brown;
+    position: absolute;
+    /* display: none; */
+}

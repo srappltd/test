@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="card.css">
+</head>
+<body>
+    <div id="main">
+        <div class="box">
+            <div class="card"></div>
+
+        </div>
+    </div>
+    <script>
+        var card = document.querySelector('.card');
+        var box = document.querySelector('.box');
+        var flag = 0;
+        box.addEventListener("dblclick",(e)=>{
+            if(flag == 0){
+                var x = card.offsetWidth;
+                var y = card.offsetHeight;
+                card.style.top = `${e.pageY - y + y/2 + 50}px`;
+                card.style.left = `${e.pageX - x*2 + x - 40}px`;
+                card.style.display = "block";
+                // flag = 1;
+            }else{
+                card.style.display = "none";
+                // flag = 0
+            }
+            // alert("sdfgh")
+        })
+        card.addEventListener("click",function(){
+            card.style.display = "none";
+        })
+    </script>
+</body>
+</html>
